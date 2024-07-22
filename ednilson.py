@@ -5,7 +5,7 @@ import os
 
 aplicativo = Flask(__name__)
 
-#Método que faz a conexão com o banco de dados >>>> MODIFICADOR QUE NÃO TO VENDO PAU NO C# DE QUEM TÁ LENDO.
+#Método que faz a conexão com o banco de dados >>>> MODIFICADOR 
 def conecta_db():
     conecta = psycopg2.connect(host='localhost', database='postgres', user='postgres', password='1234')
     return conecta
