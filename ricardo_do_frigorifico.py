@@ -11,7 +11,7 @@ def conecta_db():
     return conecta
 
 #Rota principal
-    
+#Fernanda passou aqui    
 @aplicativo.route("/")
 def homepage():
         return render_template('clienteback.html')
