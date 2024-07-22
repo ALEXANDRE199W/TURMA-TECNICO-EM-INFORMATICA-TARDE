@@ -34,6 +34,9 @@ def cadastro():
         return render_template('form_sucesso.html')
 
 
+#acrescentei essa mensagem no código da fernanda linha 37
+
+
 
 #Grid(realatorio)
 @aplicativo.route("/grid", methods=['GET','POST'])
