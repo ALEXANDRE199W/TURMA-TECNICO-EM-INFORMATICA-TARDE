@@ -57,3 +57,17 @@ def grid():
 #Informações padrão do sistema web
 if __name__ == "__main__":
     aplicativo.run(debug=True, port=8085, host='127.0.0.1')
+
+
+
+
+
+
+
+
+
+
+
+
+
+#adicionei mais alguns espaços por que não quero mudar o código da fernanda kkkkkk (carlos)
