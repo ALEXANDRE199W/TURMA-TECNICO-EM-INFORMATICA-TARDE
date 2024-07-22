@@ -11,7 +11,7 @@ def conecta_db():
     return conecta
 
 
-#MEU SITEE
+#MEU SITEE (RICARDO A BALA QUE MATOU O KENNEDY)
 @aplicativo.route("/")
 def homepage():
     return render_template('index.html')
