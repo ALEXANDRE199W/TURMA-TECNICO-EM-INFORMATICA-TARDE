@@ -33,8 +33,8 @@ def cadastro():
           conexao.close()
 
           return render_template('sucesso.html')
-
-
+#Mudei aqui
+print("Hello World")
     #Informações padrão do sistema web
 
 if __name__ == "__main__":
