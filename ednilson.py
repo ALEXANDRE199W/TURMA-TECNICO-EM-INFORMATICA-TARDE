@@ -16,7 +16,7 @@ def conecta_db():
 def homepage():
     return render_template('index.html')
 
-
+#Carlos esteve aqui
 
 #Rota para fazer inserção no banco (CADASTRO)
 @aplicativo.route("/cadastro", methods=['POST'])
