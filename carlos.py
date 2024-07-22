@@ -11,7 +11,7 @@ def conecta_db():
 @Aplicativo.route('/')
 def homepage():
     return render_template('tela1.html')
-
+#Alexandre
 @Aplicativo.route("/cadastro", methods=['POST'])
 def cadastro():
     if request.method =='POST':
