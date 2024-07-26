@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+        
+    <center><h1 class="mt-6">Lista de Clientes</h1></center><br>
+        
+        <div class="card-group">
+        
+                {% for cliente in clientes %}
+
+            <div class="col">
+                <div class="card h-100">
+                <div class="card">
+                {% if cliente[3] %}
+                <img src="{{ url_for('static', filename='uploads/' ~ cliente[3]) }}" alt="Foto de {{ cliente[1] }}" style="height: 100px;" class="card-img-top">
+                {% else %}
+                    Sem foto
+                {% endif %}
+                <div class="card-body">{{ cliente[0] }}
+                    <h5 class="card-title">{{ cliente[1] }}</h5>
+                    <p class="card-text">{{ cliente[2] }}</p>
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary mt-4">Voltar</a>          
+                </div>
+             </div>
+         </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
